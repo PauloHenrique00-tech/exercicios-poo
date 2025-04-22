@@ -4,7 +4,7 @@ abstract class Livro
     private string $titulo;
     private string $autor;
     
-
+/* Construtor é sempre público */
     public function __construct(string $titulo, string $autor) 
     {
         $this->setTitulo($titulo);
