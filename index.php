@@ -32,7 +32,7 @@ $livroProgramacao = new Programacao("Introdução ao PHP", "Thiago", Formato::FI
 
 echo "Titulo: " . $livroProgramacao->getTitulo() . "<br>";
 echo "Autor: " . $livroProgramacao->getAutor() . "<br>";
-echo "Formato: " . $livroProgramacao->getLinguagem() . "<br>";
+echo "Formato: " . $livroProgramacao->getFormato()->name . "<br>";
 echo "Linguagem: " . $livroProgramacao->getLinguagem() . "<br>";
 ?>
 </body>
