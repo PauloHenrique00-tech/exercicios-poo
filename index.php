@@ -12,13 +12,13 @@
 
     <?php
 
-require_once "src/enum/Genero.php";
-require_once "src/Livro.php";
-require_once "src/Literario.php";
+require_once "src/Enums/Genero.php";
+require_once "src/Enums/Formato.php";
+require_once "src/Models/Livro.php";
+require_once "src/Models/Literario.php";
 
-require_once "src/enum/Formato.php";
-require_once "src/Tecnico.php";
-require_once "src/Programacao.php";
+require_once "src/Models/Tecnico.php";
+require_once "src/Models/Programacao.php";
 
 $livroLiterario = new Literario("A Teoria de Tudo", "Jane Hawking", Genero::DRAMA);
 
@@ -26,6 +26,7 @@ echo "Titulo: " . $livroLiterario->getTitulo() . "<br>";
 echo "Autor: " . $livroLiterario->getAutor() . "<br>";
 echo "Gênero: " . $livroLiterario->getGenero()->value . "<br>";
 ?>
+<p>Título: <?=$livroLiterario->getTitulo()?></p>
 
 <?php 
 $livroProgramacao = new Programacao("Introdução ao PHP", "Thiago", Formato::FISICO, "PHP"); 

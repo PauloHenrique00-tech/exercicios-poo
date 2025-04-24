@@ -10,7 +10,7 @@ class Tecnico extends Livro
         $this->setFormato($formato);
     }
 
-    public function setFormato(Formato $formato): void
+    private function setFormato(Formato $formato): void
     {
         $this->formato = $formato;
     }

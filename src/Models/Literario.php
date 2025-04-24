@@ -10,7 +10,7 @@ class Literario extends Livro
         $this->setGenero($genero);
     }
 
-    public function setGenero(Genero $genero): void
+    private function setGenero(Genero $genero): void
     {
         $this->genero = $genero;
     }

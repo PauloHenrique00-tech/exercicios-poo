@@ -12,12 +12,12 @@ abstract class Livro
     }
     
 
-    public function setTitulo(string $titulo): void
+    private function setTitulo(string $titulo): void
     {
         $this->titulo = $titulo;
     }
 
-    public function setAutor(string $autor): void
+    private function setAutor(string $autor): void
     {
         if(strlen($autor) < 5){
             throw new InvalidArgumentException("Autor tem que ter pelo menos 5 letras");

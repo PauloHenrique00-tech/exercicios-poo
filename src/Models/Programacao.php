@@ -10,7 +10,7 @@ class Programacao extends Tecnico
         $this->setLinguagem($linguagem);
     }
 
-    public function setLinguagem(string $linguagem): void
+    private function setLinguagem(string $linguagem): void
     {
         $this->linguagem = $linguagem;
     }
